@@ -13,3 +13,33 @@
 /* Portfolio refinements: accessible controls, playable hardware demo, polished responsive layout */
 .filter-summary{font:500 12px/1.5 var(--body);color:var(--muted2);margin:-13px 0 20px}.project-video{width:100%;height:100%;object-fit:cover;display:block;background:#13282c}.project-card .project-video{min-height:250px}.art-heli .art-index{top:16px;bottom:auto;pointer-events:none;z-index:1}.project-link:hover,.project-quiet-link:hover{text-decoration:underline;text-underline-offset:4px}.project-link:focus-visible,.project-quiet-link:focus-visible{border-radius:3px}.project-card:focus-within{border-color:var(--accent)}.navigation a{padding-block:11px;text-underline-offset:5px}.navigation a:focus-visible{text-decoration:underline}.footer-inner a:hover{color:var(--accent)}.hero-intro strong{font-weight:700}::selection{background:var(--accent);color:var(--accent-ink)}
 @media(max-width:640px){.navigation a{padding:11px 6px;min-height:42px;display:inline-flex;align-items:center}.project-video,.project-card .project-video{min-height:215px}.filter{min-height:42px}.filter-summary{margin-top:-12px}.project-footnote{line-height:1.8}}
+
+/* Project-media redesign — authentic project assets or verifiable source-based technical previews */
+.art-delta{background:#f1f5f4}
+.art-delta img{object-fit:cover;padding:0;mix-blend-mode:normal}
+.art-car img{object-fit:contain;padding:4px;background:#f2f5f4}
+.project-video{object-fit:contain;background:#192a31}
+.tech-art{display:block;color:#d6e7e9;padding:0;background:#0d1b24}
+.art-quad{background:radial-gradient(circle at 50% 65%,#163c40 0%,#0f252f 60%,#0d1b24 100%);}
+.code-art{background:#101e29}
+.technical-head{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;gap:7px;justify-content:space-between;color:#a9ccd0;font:600 10px/1.2 var(--display);letter-spacing:.07em;border-bottom:1px solid rgba(157,229,220,.2);background:rgba(8,24,32,.72);padding:15px 18px;z-index:1}
+.technical-head span:nth-child(2){flex:1;margin-left:8px}
+.technical-head span:last-child{color:#8be5ca}
+.technical-light{width:7px;height:7px;display:block;border-radius:50%;background:#80edc7}
+.robot-telemetry{position:absolute;inset:50px 22px 35px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.telemetry-title{font:700 clamp(19px,2.1vw,28px)/1.1 var(--display);letter-spacing:-.04em;text-align:center;color:#e3f3f1}
+.telemetry-title span{color:#7de4c8;margin-inline:7px}
+.telemetry-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.telemetry-grid>div{display:flex;flex-direction:column;align-items:center;gap:7px;padding:14px 4px;border:1px solid rgba(141,233,208,.22);background:rgba(20,63,69,.55);border-radius:7px}
+.telemetry-grid b{font:700 9px var(--display);letter-spacing:.05em;color:#82e6c6;margin-bottom:3px}
+.telemetry-grid span{width:26px;height:15px;line-height:15px;border-radius:10px;background:rgba(121,232,201,.16);border:1px solid rgba(121,232,201,.28);color:#d0f5ee;text-align:center;font:700 9px/15px var(--display)}
+.telemetry-bottom{display:flex;justify-content:space-between;color:#83bac1;font:600 9px var(--display);letter-spacing:.07em}
+.telemetry-bottom span{color:#82e6c6}
+.control-source{position:absolute;inset:52px 18px 31px;display:flex;flex-direction:column;justify-content:center;gap:7px;white-space:nowrap;font:500 clamp(10px,1.05vw,13px)/1.5 ui-monospace,Consolas,monospace;color:#cde5e5}
+.control-source>div{overflow:hidden;text-overflow:ellipsis}
+.line-no{color:#638b96;display:inline-block;width:23px;margin-right:10px}
+.syntax-comment{color:#6ebba2}
+.syntax-keyword{color:#87b7ff}
+.syntax-value{color:#f4c97b}
+.source-spacer{height:5px}
+@media(max-width:640px){.control-source{font-size:clamp(10px,2.9vw,12px)}.robot-telemetry{inset:49px 15px 35px;gap:13px}.telemetry-grid{gap:5px}.telemetry-grid>div{padding:11px 3px}.telemetry-grid b{font-size:8px}.telemetry-grid span{width:22px}}
