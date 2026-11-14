@@ -4,12 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0c151b">
+  <meta name="author" content="Ilyes Dinedane">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dinedane-ilyes7.github.io/">
   <meta name="description" content="Ilyes Dinedane — Control Systems Engineer specializing in mechatronics and robotics. Explore engineering projects in control, robotics, and AI.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dinedane-ilyes7.github.io/">
+  <meta property="og:site_name" content="Ilyes Dinedane — Engineering Portfolio">
   <meta property="og:title" content="Ilyes Dinedane | Robotics · Control · AI">
   <meta property="og:description" content="Engineering motion. Designing intelligence. A portfolio of robotics, control systems, and AI projects.">
-  <title>Ilyes Dinedane — Robotics, Control & AI</title>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ilyes Dinedane | Robotics · Control · AI">
+  <meta name="twitter:description" content="Selected engineering projects in robotics, control systems, and artificial intelligence.">
+  <title>Ilyes Dinedane | Robotics, Control Systems & AI Portfolio</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ilyes Dinedane","url":"https://dinedane-ilyes7.github.io/","jobTitle":"Control Systems Engineer","description":"Mechatronics and robotics engineer focused on control systems and artificial intelligence.","alumniOf":{"@type":"CollegeOrUniversity","name":"University of Boumerdes"},"affiliation":{"@type":"CollegeOrUniversity","name":"Université Paris-Saclay"},"sameAs":["https://github.com/dinedane-ilyes7","https://www.linkedin.com/in/ilyes-dinedane/"]}</script>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://raw.githubusercontent.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -68,7 +78,7 @@
           <span class="satellite satellite-right">DECISION <b>02</b></span>
           <span class="satellite satellite-bottom">MOTION <b>03</b></span>
         </div>
-        <div class="visual-bottom"><span>MODEL → CONTROL → ACTUATION</span><span class="visual-live"><span class="dot-live"></span> SYSTEM ONLINE</span></div>
+        <div class="visual-bottom"><span>MODEL → CONTROL → ACTUATION</span><span class="visual-live"><span class="dot-live"></span> DESIGN / BUILD / TEST</span></div>
       </div>
     </section>
 
@@ -84,6 +94,7 @@
           <button type="button" class="filter" data-filter="control" aria-pressed="false">Control</button>
           <button type="button" class="filter" data-filter="ai" aria-pressed="false">AI</button>
         </div>
+        <p class="filter-summary" id="filter-summary" role="status" aria-live="polite" aria-atomic="true">Showing all 5 projects</p>
 
         <div class="projects-grid" id="project-grid">
           <article class="project-card featured" data-tags="robotics" aria-labelledby="delta-title">
@@ -109,11 +120,11 @@
           </article>
 
           <article class="project-card" data-tags="control robotics" aria-labelledby="heli-title">
-            <div class="project-art art-heli"><img src="assets/helicopter.svg" alt="Conceptual illustration of a three-degree-of-freedom helicopter control rig" loading="lazy" width="760" height="475"><span class="art-index">EXPERIMENTAL CONTROL</span></div>
+            <div class="project-art art-heli"><video class="project-video" controls playsinline preload="none" poster="assets/helicopter.svg" aria-label="3-DOF helicopter real-hardware demonstration video"><source src="https://raw.githubusercontent.com/dinedane-ilyes7/3DOF-Helicopter-Control/main/media/helicopter_demo.mp4" type="video/mp4">Your browser cannot play the video. <a href="https://github.com/dinedane-ilyes7/3DOF-Helicopter-Control/blob/main/media/helicopter_demo.mp4">Watch the demonstration on GitHub</a>.</video><span class="art-index">REAL HARDWARE DEMONSTRATION</span></div>
             <div class="project-copy">
               <div class="project-type"><span class="tiny-square"></span> CONTROL ENGINEERING / REAL HARDWARE</div>
               <h3 id="heli-title">3-DOF Helicopter</h3>
-              <p>Modeling, system identification, and LQR/LQI control of an experimental helicopter with encoder feedback and STM32 actuation.</p>
+              <p>Experimental 3-DOF helicopter with encoder feedback, STM32 motor control, system identification, and PID/LQR/LQI design. Watch the real prototype in action.</p>
               <div class="tech-tags"><span>STM32</span><span>MATLAB</span><span>LQI</span><span>LabVIEW</span></div>
               <div class="project-links"><a class="project-link" href="https://github.com/dinedane-ilyes7/3DOF-Helicopter-Control" target="_blank" rel="noopener noreferrer">Explore repository <span aria-hidden="true">↗</span></a><a class="project-quiet-link" href="https://github.com/dinedane-ilyes7/3DOF-Helicopter-Control/blob/main/media/helicopter_demo.mp4" target="_blank" rel="noopener noreferrer">Watch demo ↗</a></div>
             </div>
@@ -141,7 +152,7 @@
             </div>
           </article>
         </div>
-        <p class="project-footnote">Each repository documents its own source availability, validation status, and work still in progress. Quadruped, helicopter and PID/FOPID graphics are conceptual illustrations; the Delta Robot CAD and Robotic Car image come from project source repositories.</p>
+        <p class="project-footnote">Project media: the Delta Robot CAD and Robotic Car photo are authentic project assets; the helicopter card links to an actual hardware demonstration (the video does not establish which controller version was active). Quadruped and PID/FOPID artwork are conceptual. See each repository for implementation and verification details.</p>
       </div>
     </section>
 
@@ -163,7 +174,7 @@
     </section>
 
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="shell contact-inner"><p class="section-kicker">04 / LET'S CONNECT</p><h2 id="contact-title">Have something<br><em>interesting in mind?</em></h2><p>Open to conversations about robotics, control engineering, intelligent systems, and technical collaboration.</p><div class="contact-actions"><a class="button button-primary" href="https://www.linkedin.com/in/ilyes-dinedane/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://github.com/dinedane-ilyes7" target="_blank" rel="noopener noreferrer">Browse GitHub <span aria-hidden="true">↗</span></a></div></div>
+      <div class="shell contact-inner"><p class="section-kicker">04 / LET'S CONNECT</p><h2 id="contact-title">Have something<br><em>interesting in mind?</em></h2><p>Interested in robotics, control engineering, or intelligent systems? Explore the work or connect with me.</p><div class="contact-actions"><a class="button button-primary" href="https://www.linkedin.com/in/ilyes-dinedane/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://github.com/dinedane-ilyes7" target="_blank" rel="noopener noreferrer">Browse GitHub <span aria-hidden="true">↗</span></a></div></div>
     </section>
   </main>
 
