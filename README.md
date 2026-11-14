@@ -11,7 +11,7 @@ A lightweight, responsive personal portfolio in plain HTML, CSS and JavaScript.
 
 ## Website
 
-After GitHub Pages is enabled, the site is available at **https://dinedane-ilyes7.github.io**.
+The official GitHub Pages address is **https://dinedane-ilyes7.github.io/**.
 
 To configure it: go to **Settings → Pages → Build and deployment**, set **Source = Deploy from a branch**, choose **main** and **/(root)**, and click **Save**.
 
@@ -20,6 +20,6 @@ To configure it: go to **Settings → Pages → Build and deployment**, set **So
 - Project filters and theme switching: `main.js`
 - Illustrations and favicon: `assets/`
 
-The Delta Robot CAD and Robotic Car images are loaded from their public project repositories. The other project visuals are labeled conceptual illustrations, not experimental result graphics. Read the linked project repositories for current implementation scope and test status.
+The Delta Robot CAD, Robotic Car photo and experimental 3-DOF helicopter video are loaded from the public project repositories; the other two project graphics are explicitly conceptual. The helicopter video does not identify which controller was active during recording. Read the linked project repositories for current implementation scope and test status.
 
-No build tools or analytics are required.
+No build tools, tracking scripts, or analytics are required. The site includes responsive styling, keyboard-friendly filtering, a theme switcher, SEO metadata, a sitemap, and a lightweight accessible demo player.
