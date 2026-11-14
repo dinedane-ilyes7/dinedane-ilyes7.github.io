@@ -98,7 +98,7 @@
 
         <div class="projects-grid" id="project-grid">
           <article class="project-card featured" data-tags="robotics" aria-labelledby="delta-title">
-            <div class="project-art art-delta"><img src="https://raw.githubusercontent.com/dinedane-ilyes7/Delta-Robot-Pick-and-Place/main/media/previews/robot_iso.webp" alt="Three-armed Delta parallel robot CAD model" loading="eager" width="1200" height="900"><span class="art-index">FEATURED ROBOTICS PROJECT</span></div>
+            <div class="project-art art-delta"><img src="https://raw.githubusercontent.com/dinedane-ilyes7/Delta-Robot-Pick-and-Place/main/media/previews/cell_iso.webp" alt="Actual CAD design of the complete Delta Robot pick-and-place cell with conveyor and frame" loading="eager" width="1200" height="900"><span class="art-index">DELTA ROBOT · ACTUAL CAD</span></div>
             <div class="project-copy">
               <div class="project-type"><span class="tiny-square"></span> ROBOTICS / MECHANICAL DESIGN</div>
               <h3 id="delta-title">Delta Robot <span>— Pick & Place</span></h3>
@@ -109,7 +109,20 @@
           </article>
 
           <article class="project-card" data-tags="robotics" aria-labelledby="quad-title">
-            <div class="project-art art-quad"><img src="assets/quadruped-concept.svg" alt="Conceptual schematic of a four-legged robot; not a photograph of the final hardware" loading="lazy" width="760" height="475"><span class="art-index">ROS 2 / 12 JOINTS</span></div>
+            <div class="project-art art-quad tech-art" role="img" aria-label="Technical joint configuration from the project ROS 2 robot model: four legs with three commanded joints each">
+  <div class="technical-head"><span class="technical-light"></span><span>mini_dog / ROBOT DESCRIPTION</span><span>ROS 2</span></div>
+  <div class="robot-telemetry">
+    <div class="telemetry-title">4 LEGS <span>×</span> 3 JOINTS</div>
+    <div class="telemetry-grid">
+      <div><b>LEG 01</b><span>J1</span><span>J2</span><span>J3</span></div>
+      <div><b>LEG 02</b><span>J1</span><span>J2</span><span>J3</span></div>
+      <div><b>LEG 03</b><span>J1</span><span>J2</span><span>J3</span></div>
+      <div><b>LEG 04</b><span>J1</span><span>J2</span><span>J3</span></div>
+    </div>
+    <div class="telemetry-bottom">URDF / GAZEBO / ROS2_CONTROL <span>12 DOF</span></div>
+  </div>
+  <span class="art-index">ROBOT MODEL · ACTUAL JOINT MAP</span>
+</div>
             <div class="project-copy">
               <div class="project-type"><span class="tiny-square"></span> ROBOTICS / EMBEDDED SYSTEMS</div>
               <h3 id="quad-title">Quadruped Robot</h3>
@@ -120,7 +133,7 @@
           </article>
 
           <article class="project-card" data-tags="control robotics" aria-labelledby="heli-title">
-            <div class="project-art art-heli"><video class="project-video" controls playsinline preload="none" poster="assets/helicopter.svg" aria-label="3-DOF helicopter real-hardware demonstration video"><source src="https://raw.githubusercontent.com/dinedane-ilyes7/3DOF-Helicopter-Control/main/media/helicopter_demo.mp4" type="video/mp4">Your browser cannot play the video. <a href="https://github.com/dinedane-ilyes7/3DOF-Helicopter-Control/blob/main/media/helicopter_demo.mp4">Watch the demonstration on GitHub</a>.</video><span class="art-index">REAL HARDWARE DEMONSTRATION</span></div>
+            <div class="project-art art-heli"><video class="project-video" controls playsinline preload="metadata" aria-label="3-DOF helicopter real-hardware demonstration video"><source src="https://raw.githubusercontent.com/dinedane-ilyes7/3DOF-Helicopter-Control/main/media/helicopter_demo.mp4#t=29" type="video/mp4">Your browser cannot play the video. <a href="https://github.com/dinedane-ilyes7/3DOF-Helicopter-Control/blob/main/media/helicopter_demo.mp4">Watch the demonstration on GitHub</a>.</video><span class="art-index">REAL HARDWARE DEMONSTRATION</span></div>
             <div class="project-copy">
               <div class="project-type"><span class="tiny-square"></span> CONTROL ENGINEERING / REAL HARDWARE</div>
               <h3 id="heli-title">3-DOF Helicopter</h3>
@@ -131,7 +144,18 @@
           </article>
 
           <article class="project-card" data-tags="control" aria-labelledby="pid-title">
-            <div class="project-art art-pid"><img src="assets/fopid-response.svg" alt="Conceptual PID and FOPID response illustration, not experimental performance data" loading="lazy" width="760" height="475"><span class="art-index">MATLAB / SIEMENS PLC</span></div>
+            <div class="project-art art-pid tech-art code-art" role="img" aria-label="MATLAB controller equations adapted from the actual PID and FOPID project source">
+  <div class="technical-head"><span class="technical-light"></span><span>optimization_controllers.m</span><span>MATLAB</span></div>
+  <div class="control-source">
+    <div><span class="line-no">01</span><span class="syntax-comment">% Controller structures</span></div>
+    <div><span class="line-no">02</span><span class="syntax-keyword">C_pid</span> = Kp + Ki/s + Kd*s;</div>
+    <div><span class="line-no">03</span><span class="syntax-keyword">C_fopid</span> = Kp + Ki/s^λ + Kd*s^μ;</div>
+    <div class="source-spacer"></div>
+    <div><span class="line-no">04</span><span class="syntax-comment">% PSO-based tuning</span></div>
+    <div><span class="line-no">05</span><span class="syntax-keyword">optimizer</span> = <span class="syntax-value">PSO</span>;</div>
+  </div>
+  <span class="art-index">PID / FOPID · PROJECT CODE</span>
+</div>
             <div class="project-copy">
               <div class="project-type"><span class="tiny-square"></span> ADVANCED CONTROL / AUTOMATION</div>
               <h3 id="pid-title">PID & Fractional-Order PID</h3>
@@ -142,7 +166,7 @@
           </article>
 
           <article class="project-card" data-tags="robotics ai" aria-labelledby="car-title">
-            <div class="project-art art-car"><img src="https://raw.githubusercontent.com/dinedane-ilyes7/Robotic-Car-Object-Detection/main/assets/robot_car_photo.webp" alt="Built four-wheel robotic car with ESP32, battery pack, and motor driver" loading="lazy" width="654" height="339"><span class="art-index">ESP32 / OBJECT DETECTION</span></div>
+            <div class="project-art art-car"><img src="https://raw.githubusercontent.com/dinedane-ilyes7/Robotic-Car-Object-Detection/main/assets/robot_car_photo.webp" alt="Photograph of the actual assembled four-wheel ESP32 robotic-car prototype" loading="lazy" width="654" height="339"><span class="art-index">REAL ROBOT · ESP32</span></div>
             <div class="project-copy">
               <div class="project-type"><span class="tiny-square"></span> EMBEDDED ROBOTICS / AI</div>
               <h3 id="car-title">Robotic Car <span>— Object Detection</span></h3>
@@ -152,7 +176,7 @@
             </div>
           </article>
         </div>
-        <p class="project-footnote">Project media: the Delta Robot CAD and Robotic Car photo are authentic project assets; the helicopter card links to an actual hardware demonstration (the video does not establish which controller version was active). Quadruped and PID/FOPID artwork are conceptual. See each repository for implementation and verification details.</p>
+        <p class="project-footnote">Visuals use real project materials where available: Delta cell CAD, the robotic-car prototype photo, and the helicopter hardware video. The Quadruped card presents the documented 12-joint ROS 2 model, and the PID–FOPID card displays controller source structure rather than invented performance plots. See repositories for implementation and validation details.</p>
       </div>
     </section>
 
