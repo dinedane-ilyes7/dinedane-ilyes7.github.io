@@ -20,6 +20,6 @@ To configure it: go to **Settings → Pages → Build and deployment**, set **So
 - Project filters and theme switching: `main.js`
 - Illustrations and favicon: `assets/`
 
-The Delta Robot CAD, Robotic Car photo and experimental 3-DOF helicopter video are loaded from the public project repositories; the other two project graphics are explicitly conceptual. The helicopter video does not identify which controller was active during recording. Read the linked project repositories for current implementation scope and test status.
+Project media are grounded in source material: a complete-cell CAD render from the Delta Robot repository, an actual robotic-car prototype photo, and the experimental 3-DOF Helicopter video. Where original photo/video media are not published (Quadruped and PID–FOPID), the website uses source-based technical panels rather than misleading stock illustrations or unverified performance charts. The helicopter video does not identify which controller was active during recording. Read the linked project repositories for current implementation scope and test status.
 
 No build tools, tracking scripts, or analytics are required. The site includes responsive styling, keyboard-friendly filtering, a theme switcher, SEO metadata, a sitemap, and a lightweight accessible demo player.
